@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b5eb6bda4a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/tarak-newlogonew.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>FRONTEND-DEVELOPER</p>
+          <h1>
+            Hi, I'm <span>A</span> Tarak<span>eshwar</span> <br />From India
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!------------------ABOUT---------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/tarak-bg1.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              As a passionate frontend developer, I am eager to apply my
+              knowledge of HTML, CSS, JavaScript, and React to create dynamic
+              and responsive web applications. My enthusiasm for web development
+              drives me to build engaging user interfaces and continuously
+              improve my skills to deliver innovative, high-quality solutions.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />Designing Web/App interfaces
+                </li>
+                <li>
+                  <span>Responsive Webpage Developement</span><br />Designing
+                  Responsive Webpages.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023 - Present</span><br />Freelancing Web Developer
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023</span><br />B.TECH Graduate from VIT, Chennai
+                  Campus.
+                </li>
+                <li>
+                  <span>2019</span><br />12TH Grade M.P.C Student from Sri
+                  Chaintanya Educational Institute, Vijayawada.
+                </li>
+                <li>
+                  <span>2017</span><br />10TH Grade CBSE Student from Akshara
+                  International School, Anantapur.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------SERVICES----------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Static Page</h2>
+            <p>
+              Developing simple webpages using HTML and CSS from scratch to get
+              the maximum knowledge and internal working inside the webpage.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fas fa-clone"></i>
+            <h2>Web Design</h2>
+            <p>
+              Developing a website like Amazon, YouTube, etc. from scratch to
+              dive deep into the functions, localStorage, CSS-positioning, API'S
+              many more topics.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fab fa-js"></i>
+            <h2>JS Progamming</h2>
+            <p>
+              JavaScript is a versatile programming language essential for web
+              development, enabling interactive elements and dynamic content. It
+              enhances user experiences by manipulating the DOM and handling
+              events.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------PORTFOLIO---------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>YouTube Clone Webpage</h3>
+              <p>
+                This is an ideal page which resembles YOUTUBE application with
+                minimal features.Developed using with HTML and CSS only.
+              </p>
+              <a href="#"><i class="fas fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Rock-Paper-Scissor Game</h3>
+              <p>
+                RPS Game is developed using HTML,CSS & JS. It also include AUTO
+                play feature and RESET button to clear the previous outcomes.
+              </p>
+              <a href="#"><i class="fas fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>TO-DO List</h3>
+              <p>
+                This is developed using JS. And it has teached me the core
+                concepts of JS.This is a very simple project but a effective
+                one.
+              </p>
+              <a href="#"><i class="fas fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <!------------CONTACT DETAILS--------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p><i class="fas fa-envelope"></i>alavalatarakeshwar@gmail.com</p>
+            <p><i class="fas fa-phone"></i>9676546710</p>
+            <div class="social-icons">
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+              <a href=""><i class="fab fa-github"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>A TARAKESHWAR <i class="fas fa-heart"></i> PORTFOLIO</p>
+      </div>
+    </div>
+    <!---------JAVASCRIPT------------>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzkZIp6aTZnzzyOrRX510eOyHHDI7ZdyaClO0VaM1GFrk-WHM6owPDdrXolfgg63u7qmg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
